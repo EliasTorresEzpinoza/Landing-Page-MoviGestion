@@ -1,14 +1,14 @@
 /*General Fonts Imports*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');/*colocamos el estilo de letra*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');/*colocamos los iconos*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 /*General Common Styles*/
 :root {
-    --primary: rgb(88, 252, 209);
-    --secondary: rgb(12, 238, 178);
-    --dark: rgb(33, 37, 47);
-    --body: rgb(136, 136, 136);
-    --white: rgb(246, 240, 240);/*si se altera esta linea, se altera la linea 46*/
-    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    --primary: #D6E6F2;
+    --secondary: #303841;
+    --dark: #51df51;
+    --body: #888;
+    --white: #ffffff;
+    --box-shadow: 0 8px 22px #12131227;
 }
 *{
     margin:0;
@@ -17,7 +17,7 @@
 }
 html {
     font: normal 16px sans-serif;
-    color: #07dffd;
+    color: #555;
     scroll-behavior: smooth !important;
 }
 
@@ -34,16 +34,16 @@ a:hover {
     opacity: 1;
 }
 a.btn {
-    color: rgb(5, 248, 183);
+    color: #fff;
     border-radius: 4px;
     text-transform: uppercase;
-    background-color: #f31d4d;
+    background-color: #2196F3;
     font-weight: 800;
     text-align: center;
 }
 .card-effect {
     box-shadow: var(--box-shadow);
-    background-color:#DFE5EF ;
+    background-color: var(--white);
     padding: 25px;
     transition: all 0.35s ease;
 }
@@ -59,17 +59,14 @@ section{
 }
 
 /*Header styles*/
-#header.navbar .container-fluid
-{
-    background-color: rgb(255, 0, 0);
-}
+
 #header #language1{
     padding-right: 3rem;
-    color: #ffffff;
+    color:white;
 }
 #header #language{
     padding-left: 0.5rem;
-    color: #00e7ff;
+    color:white;
 }
 #header #switcher{
     display: flex;
@@ -77,18 +74,14 @@ section{
 #header .form-switch{
     align-items: flex-end;
 }
-/*Aqui se estiliza el tamaño del logo*/
 #header .navbar .container-fluid .navbar-brand img{
     width: 35px;
     height: 31px;
 }
-
-
-/**/
 #header .navbar{
     display: flex;
-    background-color: #21252f;
-    border-bottom: 1px solid rgb(33, 37, 47);
+    background-color: #ffffff;
+    border-bottom: 1px solid #666260;
     position: sticky;
     box-shadow: var(--box-shadow);
 }
@@ -106,16 +99,16 @@ section{
 #header .nav-item span{
     padding-left:1px;
     padding-right: 3rem;
-    color: #ffffff;
+    color: white;
 }
 #header .container-button .toggle.active{
-    background: #ffffff;
+    background: cornflowerblue;
 }
 #header .container-button .toggle.active .toggle-button{
     Left:35px;
 }
 #header .container-button .toggle .text{
-    color: rgb(255, 255, 255);
+    color:white;
     position: absolute;
     top:3px;
     Left:70px
@@ -128,33 +121,25 @@ section{
     height: 25px;
     transition: 0.3s;
 }
+
+
+
 /* hero section */
-@media (max-width: 992px) {
-    .order-1 {
-        order: 2;
-    }
-    .order-2 {
-        order: 1;
-    }
-}
-
-
-
-
 #hero{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 #hero .container .card-group #card-center .card-body{
-    background-color: #DFE5EF;
-    color: rgb(27, 23, 23);
+    background-color:#f5f263;
+    color: #000000;
 }
 #hero .container .card-group .card-body{
     background-color:#000000;
     color: #f5f5f5;
 }
 #hero #home .row button{
-    background-color: rgb(246, 4, 4);
+    background-color: #fff200;
 }
 #hero span{
     display: flex;
@@ -164,19 +149,10 @@ section{
 #hero .callTo-Buttons{
     cursor: pointer;
 }
-
-
-/* Estilo para aumentar el tamaño de las imágenes en la sección del héroe */
-#hero .callTo-Buttons {
-    width: 200px; /* Ancho deseado */
-    height: 200px; /* Mantener la proporción de aspecto original */
+#hero .callTo-Buttons{
+    height: 100%;
+    width: 100%;
 }
-
-
-#hero .callTo-Buttons-container {
-    margin-top: 20px; 
-}
-
 
 #hero .order-lg-2{
     width: 50%;
@@ -198,7 +174,6 @@ section{
 
 
 
-
 /*AboutUs styles*/
 #Us .embed-responsive {
     display: flex;
@@ -207,7 +182,7 @@ section{
     align-items: center;
 }
 #about-us {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     font-family: 'Poppins', sans-serif;
 }
 #Us .container .row ul li span{
@@ -219,21 +194,23 @@ section{
 #Us .container .row ul li span::after{
     padding-left: 1rem;
 }
+#about-us .my-image {
+
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+
+}
 /*AboutTheTeam styles*/
 
 #about-team .container .row .team-member img{
     width: 125px;
     height: 125px;
     border-radius: 100px;
-    
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
 }
-
-
 #about-team .container .row .team-member .social-icons a{
     width: 34px;
     height: 34px;
@@ -259,20 +236,7 @@ section{
     justify-content: center;
     align-content: center;
     align-items: center;
-   
 }
-
-
-.team-member {
-    background-color: white;
-    width: 180px;
-    margin: 100px;
-
-}
-
-
-
-
 #Us iframe {
 
 }
@@ -291,14 +255,13 @@ section{
 #services h5{
     text-transform: uppercase;
     size-adjust: auto;
-    color: rgb(136, 136, 136);
+    color:#757575;
 }
 #services p{
-    color: rgb(136, 136, 136);
+    color: #757575;
 }
-
 #services li{
-    color: rgb(136, 136, 136);
+    color:#757575;
 }
 #services .texts{
     justify-content: flex-start;
@@ -315,7 +278,7 @@ section{
 #services .texts p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    color: rgb(234, 12, 12);
+    color:black;
     font-size: 16px;
     padding: 3rem 1rem 3rem 1rem;
     max-width: 330px;
@@ -337,11 +300,18 @@ section{
     margin-top: 2rem;
     width: 100%;
     height: auto;
-    background-color: #DFE5EF;
+    background-color: #f5f263;
 }
 #services .maintain{
-    background-color: #DFE5EF;
+    background-color: #f5f263;
 }
+
+#services .calls{
+
+    background-color: #f5f263;
+
+}
+
 #services .image-left{
     margin: 2rem;
 }
@@ -376,21 +346,18 @@ section{
 }
 #services .calls .container .image-calls img{
     padding: 1rem;
-    width: 300px;
-    height: auto;
+    
 
 }
 
 /*Pricing styles*/
-
-
 #pricing .container{
     margin-top: 4rem;
 }
 
 #pricing i {
     font-size: 20px;
-    color: rgb(33, 37, 47);
+    color: var(--secondary);
 }
 
 #pricing ul li {
@@ -413,15 +380,15 @@ section{
 }
 #contact-Us .container form .col-md-10 button{
     height: 50px;
-    border-color: rgb(36, 41, 51);
-    color: rgb(246, 240, 240);
-    background-color: rgb(33, 37, 47);
+    border-color: #242933;
+    color: #ffffff;
+    background-color: #242933;
 }
 #contact-Us .container form .col-md-10 button:hover{
-    background-color: rgb(48, 56, 65);
+    background-color: #34363f;
 }
 #contact-Us #EnterMessage{
-    color: var(--body);/*si se altera esta linea, se altera la linea 372,379,387*/
+    color: var(--body);
 }
 
 /*Footer styles*/
@@ -432,7 +399,7 @@ section{
     color:var(--body);
     padding-top: 20px;
     padding-bottom: 40px;
-    background-color: var(--dark);
+    background-color: #242933;
 }
 
 #footer .footer-top a {
@@ -445,16 +412,45 @@ section{
 
 #footer .footer-bottom {
     color:var(--body);
-    background-color: rgba(33, 37, 47, 0.97);
+    background-color: #242933;
 }
 #footer .logo-foot {
     width: 15%;
 }
 #footer .App-name{
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
 }
 #footer .social-icons a{
     padding-left: 1rem;
+}
+#footer #terms-service{
+
+}
+
+/*@Media Configs*/
+@media screen and (max-width:1000px){
+    #services img{
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    #services .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    #services .container-texts{
+        height: 300px;
+        justify-content: center;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+    }
+    #services .maintain{
+        margin-top: 6rem;
+    }
 }
